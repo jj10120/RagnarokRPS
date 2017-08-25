@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+
+    <ImageButton
+        app:srcCompat="@drawable/startbtn"
+        android:id="@+id/btnstart"
+        android:onClick="startGame"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:soundEffectsEnabled="false" />
+
+    <ImageButton
+        app:srcCompat="@drawable/btnmultiplayer"
+        android:id="@+id/btnmp"
+        android:onClick="mp"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignBottom="@+id/btnstart"
+        android:layout_alignParentEnd="true"
+        android:soundEffectsEnabled="false" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btnhowtoplay"
+        android:id="@+id/btnhtp"
+        android:onClick="htp"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_alignBottom="@+id/btnmp"
+        android:layout_centerHorizontal="true"
+        android:soundEffectsEnabled="false" />
+
+</RelativeLayout>

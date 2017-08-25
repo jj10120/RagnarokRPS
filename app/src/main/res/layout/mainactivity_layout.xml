@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        layout="@layout/cards"
+        android:layout_above="@+id/include"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp"
+        android:id="@+id/include2" />
+
+    <TextView
+        android:id="@+id/playscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="32sp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/playscore"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/resetscore"
+        android:soundEffectsEnabled="false" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/button2"
+        android:onClick="back"
+        android:layout_alignBottom="@+id/include2"
+        android:layout_alignStart="@+id/resetscore"
+        android:soundEffectsEnabled="false" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:id="@+id/compscore"
+        android:textSize="36sp"
+        android:layout_alignBottom="@+id/resetscore"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>
